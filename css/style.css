@@ -1,0 +1,3263 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Satoshi", sans-serif;
+}
+/* ................csss of header............. */
+header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 100;
+}
+
+header.darkHeader {
+  background-color: #242d3f;
+}
+header .header-inner {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .logo-hambar {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+header .logo-hambar .logo {
+  height: 20px;
+  display: inline-block;
+}
+.logo-hambar a {
+  text-decoration-line: none;
+}
+.logo h1 {
+  color: #ffffff;
+  letter-spacing: 10px;
+  font-size: 30px;
+  font-weight: 700;
+  margin-top: -10px;
+  font-style: normal;
+}
+/* header .logo-hambar .logo img{
+    height: 100%;
+    vertical-align: unset;
+
+} */
+header .logo-hambar .hambar {
+  width: 32px;
+  height: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: none;
+  background: none;
+}
+header .logo-hambar .hambar .bar {
+  height: 2px;
+  background-color: #ffffff;
+}
+header .header-nav .menu {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  display: flex;
+  gap: 40px;
+}
+header .header-nav .menu .menu-list {
+  text-transform: uppercase;
+}
+header .header-nav .menu .menu-link {
+  align-items: center;
+  color: #ffffff;
+  display: block;
+  text-decoration-line: none;
+  font-size: 15px;
+  font-family: "Satoshi";
+  font-weight: 400;
+  font-style: normal;
+}
+/* ............css of cover-page............ */
+.page-cover {
+  background-image: url(/image/ship.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+.page-cover::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 220px;
+  background: linear-gradient(180deg, rgba(36, 45, 63, 0) 0%, #242d3f 100%);
+}
+.section-inner {
+  position: absolute;
+  bottom: 25%;
+}
+.section-inner h2 {
+  width: 780px;
+  font-size: 53px;
+  font-weight: 700;
+  line-height: 109%;
+  letter-spacing: -0.01em;
+  color: #ffffff;
+}
+
+.section-inner .button {
+  position: absolute;
+  font-family: "Satoshi";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 15px;
+  letter-spacing: 0.115em;
+  text-transform: uppercase;
+  color: #242d3f;
+  background: #b1ff00;
+  border: 1px solid #b1ff00;
+  border-radius: 24px;
+  display: inline-block;
+  padding: 14px 40px;
+  top: 180px;
+  text-decoration-line: none;
+}
+/* .............css of capital............ */
+.capital {
+  background-color: #242d3f;
+  color: #ffffff;
+  padding: 50px 0 100px 0;
+  position: relative;
+}
+.sidebar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.sidebar-one h3 {
+  font-weight: 400;
+  font-size: 36px;
+}
+.sidebar-one {
+  flex-basis: 45%;
+}
+.sidebar-one p {
+  font-weight: 700;
+  font-size: 53px;
+  line-height: 64px;
+}
+.sidebar-two {
+  flex-basis: 50%;
+  padding-top: 100px;
+}
+.sidebar-two p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+}
+.sidebar-two .button {
+  border: 2px solid #b1ff00;
+  color: #fff;
+  background: #242d3f;
+  display: inline-block;
+  padding: 14px 35px;
+  font-size: 11px;
+  border-radius: 35px;
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: 0.115em;
+  text-transform: uppercase;
+  margin-top: 20px;
+  text-decoration-line: none;
+}
+/* .................css of asset............ */
+.asset {
+  background-color: #242d3f;
+  padding: 50px 0 100px 0;
+}
+.row img {
+  width: 555px;
+  height: 206px;
+  margin: 5px 0;
+  position: relative;
+  padding: 5px 5px;
+}
+.row .img-title {
+  position: absolute;
+  color: #ffffff;
+  right: 325px;
+  bottom: 30px;
+}
+/* .............css of .technology............. */
+.technology {
+  /* background-image: url(/image/submarine-bg.png); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  /* height: 100vh; */
+  padding: 0 0 100px 0;
+  position: relative;
+  overflow: hidden;
+}
+.technology::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  left: 0px;
+  right: 0px;
+  background: linear-gradient(180deg, rgba(36, 45, 63, 0) 0%, #242d3f 100%);
+}
+/* .text-p{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+} */
+.technology-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.technology-left {
+  width: 560px;
+  height: 90px;
+  top: 350px;
+  position: absolute;
+}
+.technology-header {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 36px;
+  position: absolute;
+  top: -310px;
+}
+.technology-left h2 {
+  color: #ffffff;
+  font-size: 53px;
+}
+
+.technology-left p {
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  font-size: 18px;
+}
+.technology-left .button {
+  border: 2px solid #b1ff00;
+  color: #fff;
+  margin-top: 15px;
+  display: inline-block;
+  padding: 13px 40px;
+  font-size: 11px;
+  border-radius: 35px;
+  text-decoration-line: none;
+}
+/* ...............css of partner............ */
+.partner {
+  padding: 100px 0 100px 0;
+  background-color: #242d3f;
+  color: #ffffff;
+  border-bottom: 1px solid #dadada;
+  overflow: hidden;
+}
+
+.partner-inner {
+  width: 732px;
+}
+.partner-inner h4 {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 49px;
+}
+.partner-inner p {
+  font-weight: 700;
+  font-size: 53px;
+  line-height: 64px;
+  letter-spacing: -0.01em;
+}
+.picture-img {
+  height: 150px;
+}
+.picture-img img {
+  width: 100%;
+  padding-top: 50px;
+}
+/* ..................css of service................. */
+.services {
+  overflow: hidden;
+  background-color: #242d3f;
+  color: #ffffff;
+  position: relative;
+  padding: 200px 0 70px 0;
+}
+.service-inside {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.service-left {
+  flex-basis: 40%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.service-left h4 {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 49px;
+  letter-spacing: -0.01em;
+}
+.service-left h3 {
+  font-weight: 700;
+  font-size: 53px;
+  line-height: 60px;
+  letter-spacing: -0.01em;
+}
+.service-left p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: -0.01em;
+}
+.service-left .button {
+  border: 2px solid #b1ff00;
+  color: #ffffff;
+  background: #242d3f;
+  display: inline-block;
+  padding: 14px 48px;
+  font-size: 11px;
+  border-radius: 35px;
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: 0.115em;
+  text-transform: uppercase;
+  text-decoration-line: none;
+  width: 170px;
+}
+.service-right {
+  flex-basis: 60%;
+}
+.swiperSliderOne {
+  max-width: 810px;
+  height: 600px;
+}
+.mySwiper {
+  max-width: 100%;
+  height: 100px;
+}
+.mySwiper .swiper-slide {
+  opacity: 0.4;
+}
+.mySwiper .swiper-slide-thumb-active {
+  opacity: 1;
+}
+.mySwiper2 {
+  max-width: 100%;
+  height: 600px;
+}
+.mySwiper {
+  width: 100%;
+  height: 150px;
+}
+
+.mySwiper .swiper-slide {
+  width: 25%;
+  height: 100%;
+  opacity: 0.4;
+}
+
+.mySwiper .swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.swiper-slide {
+  background-size: cover;
+  background-position: center;
+}
+.swiper-pagination-fraction {
+  bottom: 10px;
+  left: -530px;
+  width: 100%;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  top: auto;
+  bottom: 0px;
+  right: 75px;
+  height: 39px;
+  width: 50px;
+}
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next {
+  left: auto;
+  right: 10px;
+  width: 50px;
+  height: 39px;
+}
+.swiper-button-prev::after,
+.swiper-rtl .swiper-button-next::after {
+  content: "";
+}
+.swiper-button-next::after,
+.swiper-rtl .swiper-button-next::after {
+  content: "";
+}
+
+/* ...............css for news.............. */
+.news {
+  background-color: #ffffff;
+  padding: 100px 0 0 0;
+  overflow: hidden;
+}
+.news-heading {
+  position: relative;
+}
+.news-heading a {
+  text-decoration-line: none;
+}
+.news-heading p {
+  font-size: 36px;
+  line-height: 49px;
+  letter-spacing: -0.01em;
+  color: #242d3f;
+  text-decoration-line: none;
+}
+.news-heading h1 {
+  width: 681px;
+  font-weight: 700;
+  font-size: 53px;
+  line-height: 64px;
+  letter-spacing: -0.01em;
+  color: #242d3f;
+}
+.news-heading .button {
+  position: absolute;
+  right: 10px;
+  top: 145px;
+  border: 2px solid #242d3f;
+  color: #242d3f;
+  background: #fff;
+  display: inline-block;
+  padding: 11px 60px;
+  font-size: 16px;
+  border-radius: 36px;
+  text-decoration-line: none;
+}
+/* ..........CSS FOR NEWS BOTTOM......... */
+.news-bottom {
+  background-color: #ffffff;
+  padding-top: 50px;
+}
+.row .marine img {
+  width: 100%;
+  height: 396px;
+}
+.row .marine .paragraph {
+  margin-top: -90px;
+  font-family: "Satoshi";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 149%;
+}
+.row .marine p {
+  position: absolute;
+  margin-bottom: -100px;
+  color: #fff;
+  top: 280px;
+  left: 35px;
+  font-size: 15px;
+}
+/* ............css for footer............. */
+footer {
+  padding: 30px 0;
+  overflow: hidden;
+}
+.footer-menu {
+  text-decoration: none;
+  list-style-type: none;
+}
+.footer-menu-list .footer-menu-link {
+  align-items: center;
+  color: #71706f;
+  font-family: "Satoshi";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 140%;
+}
+.footer-bottom {
+  border-top: 1px solid #71706f;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.footer-logo h1 {
+  color: #242d3f;
+  font-size: 30px;
+  letter-spacing: 5px;
+  margin-top: 5px;
+}
+
+.footer-bottom .footer-bottom-menu {
+  list-style-type: none;
+  text-decoration: none;
+  display: flex;
+  gap: 20px;
+}
+
+.footer-bottom .footer-bottom-menu .menu-list .menu-link {
+  align-items: center;
+  color: #71706f;
+  display: block;
+  font-size: 13px;
+  text-decoration-line: none;
+}
+
+/*-----------about-page----------- */
+.about-page {
+  background-image: url(/image/naval-1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 90vh;
+  position: relative;
+}
+.about-page::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: -73px;
+  background: linear-gradient(180deg, rgba(36, 45, 63, 0) 0%, #242d3f 100%);
+  width: 100%;
+  height: 100%;
+}
+.about-inner {
+  position: absolute;
+  bottom: 10%;
+}
+.about-inner h4 {
+  width: 468px;
+  height: 49px;
+  font-family: "Satoshi";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 109%;
+  letter-spacing: -0.01em;
+  color: #ffffff;
+}
+.about-inner p {
+  font-family: "Satoshi";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 66px;
+  line-height: 109%;
+  letter-spacing: -0.01em;
+  color: #ffffff;
+  width: 715px;
+  height: 140px;
+}
+/* .................CSS For about-bottom-menu.......... */
+.about-bottom-menu {
+  background-color: #ffffff;
+  border-bottom: 1px solid #242d3f;
+}
+.bottom-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.bottom-menu .manu-bar {
+  margin: 0;
+  font-size: 13px;
+  text-decoration: none;
+  list-style-type: none;
+  display: flex;
+  gap: 100px;
+}
+.bottom-menu .manu-bar li a {
+  display: block;
+  color: #242d3f;
+  align-items: center;
+  text-decoration-line: none;
+  padding: 15px 0px;
+}
+.manu-bar .border :first-child {
+  border-right: 1px solid #242d3f;
+  width: 100px;
+}
+
+/* ............css for naval.............. */
+.naval {
+  background-color: #fff;
+  margin: 100px 0;
+  position: relative;
+}
+.naval img {
+  width: 100%;
+  height: 470px;
+  margin-left: -133px;
+}
+.naval h2 {
+  width: 468px;
+  font-size: 53px;
+  height: 190px;
+  line-height: 64px;
+  letter-spacing: -1px;
+}
+.naval p {
+  width: 560px;
+  font-size: 15px;
+  color: #242d3f;
+}
+.naval .row .button {
+  font-weight: 400;
+  font-size: 11px;
+  text-align: center;
+  color: #242d3f;
+  line-height: 15px;
+  text-transform: uppercase;
+  border: 2px solid #242d3f;
+  padding: 14px 55px;
+  border-radius: 36px;
+  text-decoration-line: none;
+  border: 2px solid #343434;
+  position: absolute;
+  top: 365px;
+}
+/* ..............css of naval-part-2........... */
+.naval-part-2 {
+  padding: 0;
+}
+.naval-part-inside {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.inside-one {
+  flex-basis: 45%;
+}
+.inside-one p {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 49px;
+  letter-spacing: -0.01em;
+  color: #242d3f;
+}
+.inside-one h2 {
+  font-weight: 700;
+  font-size: 53px;
+  letter-spacing: -0.01em;
+  color: #242d3f;
+}
+.inside-two {
+  flex-basis: 50%;
+}
+.inside-two p {
+  font-size: 18px;
+  color: #242d3f;
+  line-height: 30px;
+  letter-spacing: -0.01em;
+}
+/* ............nabal-bottom part........... */
+.naval-bottom-part {
+  background-color: #ffffff;
+  padding: 100px 0 100px 0;
+}
+.naval-bottom-part img {
+  height: 351px;
+}
+/*....... css of blockquoate section ...........*/
+.blockquoate {
+  background-color: #ffffff;
+  position: relative;
+  padding: 100px 0 100px 0;
+  overflow: hidden;
+}
+.quoation img {
+  width: 100%;
+  height: 612px;
+}
+.quation-line {
+  position: absolute;
+  width: 430px;
+  top: 300px;
+  right: 170px;
+}
+.quation-line .paragraph {
+  font-size: 20px;
+  color: #ffffff;
+}
+.quation-line p {
+  color: #ffffff;
+  font-size: 15px;
+}
+
+/* ...............css of vehicles section ...........*/
+.vehicle {
+  padding: 0 0 0 0;
+  overflow: hidden;
+  position: relative;
+}
+.vehicle::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(36, 45, 63, 0) 0%, #242d3f 100%);
+}
+.vehicle-inside {
+  width: 1280px;
+}
+.vehicle-engine h4 {
+  position: absolute;
+  top: 30px;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 49px;
+  letter-spacing: -0.01em;
+}
+.vehicle-engine h3 {
+  position: absolute;
+  color: #ffffff;
+  width: 515px;
+  height: 128px;
+  top: 210px;
+  font-size: 53px;
+}
+.vehicle-engine p {
+  top: 360px;
+  position: absolute;
+  color: #ffffff;
+  width: 560px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: -0.01em;
+}
+.vehicle-inside .row {
+  position: absolute;
+  bottom: 5px;
+  right: -115px;
+  left: 110px;
+}
+
+/* ...........css for capabilities-page........... */
+.capabilities-page {
+  background-image: url(/image/ship-eng.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+.capabilities-page::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(36, 45, 63, 0) 0%, #242d3f 100%);
+}
+.capabilities-inner {
+  position: absolute;
+  bottom: 5%;
+}
+.capabilities-inner h4 {
+  width: 468px;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 36px;
+  letter-spacing: -0.01em;
+}
+.capabilities-inner p {
+  width: 615px;
+  font-weight: 700;
+  font-size: 63px;
+  line-height: 65px;
+  letter-spacing: -0.01em;
+  color: #ffffff;
+}
+/* ...........css for capabilities-bottom.......... */
+.capabilities-bottom {
+  padding: 100px 0 100px 0;
+  background-color: #242d3f;
+}
+.capabilities-inside {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.capabilities-one {
+  flex-basis: 45%;
+}
+.capabilities-one h2 {
+  font-weight: 700;
+  font-size: 53px;
+  letter-spacing: -0.01em;
+  color: #ffffff;
+  width: 515px;
+}
+.capabilities-two {
+  flex-basis: 50%;
+}
+.capabilities-two p {
+  font-size: 18px;
+  color: #ffffff;
+  line-height: 30px;
+  letter-spacing: -0.01em;
+}
+/* ..........capabilities-bottom-two........... */
+.capabilities-bottom-two {
+  height: 70vh;
+  background-color: #242d3f;
+  position: relative;
+}
+.cab-img h4 {
+  position: absolute;
+  left: 52px;
+  bottom: 215px;
+  color: #fff;
+  font-size: 36px;
+}
+.cab-img p {
+  position: absolute;
+  left: 52px;
+  bottom: 135px;
+  color: #fff;
+  font-size: 18px;
+}
+.capabilities-bottom-two img {
+  height: 351px;
+}
+/*--------technology page-----------*/
+/* .............css of technology........ */
+.header-bottom {
+  padding: 200px 0 30px 0;
+  background-color: #242d3f;
+}
+
+.header-para a {
+  text-decoration-line: none;
+}
+.header-para h4 {
+  width: 100%;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 53px;
+  text-align: center;
+  letter-spacing: -0.01em;
+  padding: 0 310px;
+  padding-bottom: 30px;
+}
+.header-para p {
+  width: 100%;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 18px;
+  /* line-height: 30px; */
+  text-align: center;
+  letter-spacing: -0.01em;
+  padding: 0 310px;
+}
+/* .............css of optical technology bottom........... */
+.technology-optical {
+  background-color: #242d3f;
+  position: relative;
+  padding-bottom: 100px;
+}
+.tech-optical img::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(36, 45, 63, 0) 0%, #242d3f 100%);
+}
+.tech-optical img {
+  height: 560px;
+  width: 100%;
+  padding: -1 10px;
+  position: relative;
+}
+
+.row .tech-optical .img-title {
+  position: absolute;
+  color: #ffffff;
+  bottom: 100px;
+  left: 60px;
+}
+.tech-optical p {
+  position: absolute;
+  bottom: 30px;
+  width: 498px;
+  color: #ffffff;
+  left: 60px;
+  font-size: 15px;
+}
+/*------services page--------*/
+/* ..............css of service top........... */
+.service-top {
+  padding: 200px 0 30px 0;
+  background-color: #242d3f;
+}
+.service-para a {
+  text-decoration-line: none;
+}
+.service-para h4 {
+  width: 100%;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 53px;
+  text-align: center;
+  letter-spacing: -0.01em;
+  padding: 0 310px;
+  padding-bottom: 30px;
+}
+.service-para p {
+  width: 100%;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  letter-spacing: -0.01em;
+  padding: 0 310px;
+}
+/* ...............css of services bottom........... */
+.services-bottom {
+  padding-bottom: 100px;
+  background-color: #242d3f;
+  position: relative;
+}
+.services-bottom .service-pic img {
+  height: 505px;
+  width: 100%;
+}
+.services-bottom .service-pic h3 {
+  position: absolute;
+  left: 40px;
+  bottom: 30px;
+  font-size: 35px;
+  width: 182px;
+  color: #ffffff;
+  font-family: "Satoshi";
+  font-style: normal;
+  font-weight: 700;
+  line-height: 49px;
+}
+.services-bottom .service-pic .top {
+  position: absolute;
+  top: 280px;
+}
+.services-bottom .service-pic p {
+  position: absolute;
+  color: #ffffff;
+  font-size: 15px;
+  bottom: 30px;
+  width: 328px;
+  left: 40px;
+  font-family: "Satoshi";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23px;
+}
+.services-bottom .service-pic .speak {
+  width: 450px;
+  color: #242d3f;
+}
+/*---------contact page---------*/
+/* ...........css of contact........... */
+.contact {
+  background-image: url(/image/contact.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+  background-color: #242d3f;
+  position: relative;
+}
+.contact-area::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  background: linear-gradient(180deg, rgba(36, 45, 63, 0) 0%, #242d3f 100%);
+}
+.contact-area h4 {
+  position: absolute;
+  width: 100%;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 53px;
+  line-height: 72px;
+  margin-left: 395px;
+  letter-spacing: 0.02em;
+  padding: 150px 0 0 0;
+}
+/* ...........csss of contact-bottom........ */
+
+.text-area-inside {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contact-right {
+  flex-basis: 50%;
+}
+.contact-right img {
+  width: 100%;
+  background-color: #ffffff;
+  color: #242d3f;
+  height: 393px;
+  margin-top: 35px;
+}
+.contact-left {
+  flex-basis: 50%;
+  background-color: #242d3f;
+  padding: 60px 0;
+}
+.contact-left h4 {
+  width: 199px;
+  height: 47px;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 47px;
+  text-align: center;
+  color: #ffffff;
+  margin-left: 185px;
+}
+.contact-left .input-field {
+  margin: 5px;
+  width: 440px;
+  height: 49px;
+  margin-left: 75px;
+}
+.contact-left .textarea-field {
+  height: 150px;
+  padding-top: 10px;
+}
+.contact-left .btn {
+  width: 140px;
+  font-family: "Satoshi";
+  font-weight: 400;
+  font-style: normal;
+  border: 2px solid #b1ff00;
+  color: #ffffff;
+  margin-top: 20px;
+  margin-left: 205px;
+  outline: none;
+  padding: 8px 25px;
+  border-radius: 25px;
+}
+
+/* ............css for technology-sub-pages.......... */
+.technology-sub-page {
+  padding: 180px 0 100px 0;
+}
+.technology-main-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.technology-area-one {
+  flex-basis: 45%;
+}
+.technology-area-one h2 {
+  font-size: 53px;
+  line-height: 109px;
+  letter-spacing: -1px;
+  font-family: "Satoshi";
+  font-weight: 700;
+  font-style: normal;
+}
+.technology-area-one p {
+  font-size: 18px;
+  color: #242d3f;
+  font-family: "Satoshi";
+  font-weight: 400;
+  font-style: normal;
+  line-height: 30px;
+}
+.technology-area-two {
+  flex-basis: 45%;
+}
+.technology-area-two img {
+  width: 532px;
+  height: 521px;
+}
+/* ............css for technology-sub-pages-top.......... */
+.technology-sub-page-top {
+  background-image: url(/image/ship6.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 50px 0 500px 0;
+  background-position: center top;
+  position: relative;
+}
+.technology-sub-page-top h2 {
+  position: absolute;
+  color: #ffffff;
+  width: 190px;
+  font-size: 30px;
+  font-family: "Satoshi";
+  font-weight: 700;
+  font-style: normal;
+  height: 40px;
+  top: 100px;
+}
+.technology-sub-page-top p {
+  position: absolute;
+  font-family: "Satoshi";
+  font-style: normal;
+  font-weight: 400;
+  width: 560px;
+  height: 180px;
+  font-size: 18px;
+  color: #ffffff;
+  top: 180px;
+}
+
+/* ...........css for technology-sub-page-bottom............ */
+.technology-sub--bottom {
+  background-color: #ffffff;
+  position: relative;
+  padding: 0 0 100px 0;
+}
+.tech-sub-pic img {
+  width: 100%;
+  height: 470px;
+  margin-top: 110px;
+}
+.row .shado::before {
+  content: "";
+  position: absolute;
+  width: 90%;
+  height: 82%;
+  top: 95px;
+  left: 22px;
+  right: 11px;
+  background: linear-gradient(180deg, rgba(36, 45, 63, 0) 0%, #242d3f 100%);
+}
+.tech-sub-pic h4 {
+  width: 297px;
+  height: 92px;
+  font-family: "Satoshi";
+  font-weight: 700;
+  font-size: 35px;
+  font-style: normal;
+  color: #ffffff;
+  position: absolute;
+  top: 285px;
+  left: 50px;
+}
+.tech-sub-pic p {
+  width: 400px;
+  height: 90px;
+  font-family: "Satoshi";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  color: #ffffff;
+  position: absolute;
+  top: 400px;
+  left: 50px;
+}
+.row .tech-sub-pic .text-top {
+  position: absolute;
+  top: 370px;
+}
+.technology-sub--bottom .row .button {
+  position: absolute;
+  left: 50px;
+  background-color: #b1ff00;
+  color: #242d3f;
+  border: 1px solid #71706f;
+  padding: 7px 25px;
+  border-radius: 25px;
+  bottom: 60px;
+  text-decoration-line: none;
+}
+/* ...........css for services-sub-pages header........... */
+header.darkHeader {
+  background-color: #242d3f;
+}
+header .header-inner-2 {
+  height: 123px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .logo-hambar-2 {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+header .logo-hambar-2 .logo-2 {
+  display: inline-block;
+}
+header .logo-hambar-2 .logo-2 h1 {
+  letter-spacing: 10px;
+  font-size: 30px;
+  font-weight: 700;
+  font-style: normal;
+  color: #fff;
+}
+header .logo-hambar-2 .logo-2 img {
+  height: 100%;
+  vertical-align: unset;
+  color: #242d3f;
+}
+header .logo-hambar-2 .hambar-2 {
+  width: 32px;
+  height: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: none;
+  background: none;
+}
+header .logo-hambar-2 .hambar-2 .bar {
+  height: 2px;
+  background-color: #fff;
+}
+
+header .header-nav-2 .menu-2 {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  display: flex;
+  gap: 64px;
+}
+header .header-nav-2 .menu-2 .menu-list-2 {
+  text-transform: uppercase;
+  text-decoration-line: none;
+}
+header .header-nav-2 .menu-2 .menu-link-2 {
+  align-items: center;
+  color: #fff;
+  display: block;
+  text-decoration-line: none;
+}
+/* .............css for services-sub-pages.......... */
+.services-sub-page {
+  padding: 180px 0 100px 0;
+}
+.services-main-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.services-area-one {
+  flex-basis: 45%;
+}
+.services-area-one h2 {
+  font-size: 53px;
+  line-height: 109px;
+  letter-spacing: -1px;
+  font-family: "Satoshi";
+  font-weight: 700;
+  font-style: normal;
+}
+.services-area-one p {
+  font-size: 18px;
+  color: #242d3f;
+  font-family: "Satoshi";
+  font-weight: 400;
+  font-style: normal;
+  line-height: 30px;
+}
+.services-area-two {
+  flex-basis: 45%;
+}
+.services-area-two img {
+  width: 532px;
+  height: 521px;
+}
+
+/* ...........css for survice-page-top.......... */
+.service-page-top {
+  padding: 100px 0 100px 0;
+  background-color: #242d3f;
+  /* position: relative; */
+}
+.contact-box {
+  /* position: absolute;
+  left: 33%;
+  color: #ffffff;
+  right: 50%;
+  top: 15%;
+  width: 560px;
+  outline: none; */
+  margin-left: 30%;
+  width: 560px;
+  color: #ffffff;
+}
+.contact-box h3 {
+  width: 200px;
+  font-size: 35px;
+  line-height: 47px;
+  letter-spacing: -1px;
+  font-family: "Satoshi";
+  font-weight: 700;
+  font-style: normal;
+  margin-left: 125px;
+}
+.input-field {
+  margin: 5px;
+  width: 440px;
+  height: 49px;
+}
+.textarea-field {
+  height: 150px;
+  padding-top: 10px;
+}
+.contact-box .btn {
+  width: 140px;
+  font-family: "Satoshi";
+  font-weight: 400;
+  font-style: normal;
+  border: 2px solid #b1ff00;
+  color: #ffffff;
+  margin-top: 15px;
+  margin-left: 135px;
+  outline: none;
+  padding: 8px 25px;
+  border-radius: 25px;
+}
+
+/* ..........CSS FOR THE WATCH.......... */
+.the-watch {
+  background-color: #242d3f;
+  padding: 150px 0 150px 0;
+  border-bottom: 1px solid #242d3f;
+}
+.watch-middle h2 {
+  font-size: 53px;
+  color: #fff;
+  text-align: center;
+}
+/* ...............CSS FOR WATCH HWADING............ */
+.watch-header {
+  background-color: #ffffff;
+  padding: 100px 0 100px 0;
+}
+.watch-header .row .marine img {
+  width: 100%;
+  height: 396px;
+}
+.marine h3 {
+  margin-top: -115px;
+  font-weight: 700;
+  font-size: 18px;
+  width: 329px;
+  line-height: 149%;
+  top: 350px;
+  position: absolute;
+  color: #fff;
+  left: 35px;
+}
+.watch-header .row .marine p {
+  color: #fff;
+  top: 303px;
+  width: 334px;
+  font-size: 14px;
+}
+.watch-btn {
+  margin-top: 30px;
+  margin-left: -444px;
+}
+.watch-header .row .button {
+  padding: 10px 36px;
+  margin-left: 155px;
+  color: #242d3f;
+  border: 1px solid #242d3f;
+  font-size: 15px;
+  border-radius: 25px;
+  text-decoration-line: none;
+}
+/* ---------index page----------*/
+/* ...............media ququery............ */
+
+@media only screen and (max-width: 575px) {
+  header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 100;
+  }
+  header.darkHeader {
+    background-color: #242d3f;
+  }
+  header .header-inner {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header .logo-hambar {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+
+  header .logo-hambar .logo {
+    height: 20px;
+    display: inline-block;
+  }
+  .logo-hambar a {
+    text-decoration-line: none;
+  }
+  .logo h1 {
+    color: #ffffff;
+    letter-spacing: 10px;
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: -10px;
+    font-style: normal;
+  }
+  header .logo-hambar .hambar {
+    width: 32px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: none;
+    background: none;
+  }
+  header .logo-hambar .hambar .bar {
+    height: 2px;
+    background-color: #ffffff;
+  }
+  header .header-nav .menu {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    display: flex;
+    gap: 40px;
+  }
+  header .header-nav .menu .menu-list {
+    text-transform: uppercase;
+  }
+  header .header-nav .menu .menu-link {
+    align-items: center;
+    color: #ffffff;
+    display: block;
+    text-decoration-line: none;
+    font-size: 15px;
+    font-family: "Satoshi";
+    font-weight: 400;
+    font-style: normal;
+  }
+}
+/* ............media query of cover-page............ */
+@media only screen and (max-width: 1199px) {
+  .section-inner {
+    position: absolute;
+    bottom: 10%;
+  }
+  .section-inner h2 {
+    width: 680px;
+    font-size: 53px;
+    padding-top: 45px;
+  }
+}
+/* ............media query of cover-page............ */
+@media only screen and (max-width: 991px) {
+  .section-inner {
+    position: absolute;
+    bottom: 10%;
+  }
+  .section-inner h2 {
+    width: 680px;
+    font-size: 53px;
+    padding-top: 45px;
+  }
+}
+
+/* ............media query of cover-page............ */
+@media only screen and (max-width: 767px) {
+  .section-inner {
+    position: absolute;
+    bottom: 25%;
+  }
+  .section-inner h2 {
+    width: 535px;
+    font-size: 40px;
+    padding-top: 70px;
+  }
+}
+/* ............media query of cover-page............ */
+@media only screen and (max-width: 575px) {
+  .section-inner {
+    position: absolute;
+    bottom: 25%;
+  }
+  .section-inner h2 {
+    width: 535px;
+    font-size: 40px;
+    padding-top: 70px;
+  }
+}
+
+/* .............media query of capital............ */
+@media only screen and (max-width: 1199px) {
+  .sidebar-one h3 {
+    width: 100%;
+    /* font-size: 36px; */
+  }
+  .sidebar-one {
+    flex-basis: 45%;
+  }
+  .sidebar-one p {
+    width: 430px;
+    font-size: 53px;
+    line-height: 121%;
+  }
+  .sidebar-two {
+    flex-basis: 45%;
+  }
+  .sidebar-two {
+    padding-top: 20px;
+  }
+  .sidebar-two p {
+    width: 490px;
+    font-size: 18px;
+    line-height: 140%;
+  }
+}
+/* .............media query of capital............ */
+@media only screen and (max-width: 1199px) {
+  .sidebar-one h3 {
+    width: 100%;
+    font-size: 36px;
+  }
+  .sidebar-one {
+    flex-basis: 45%;
+  }
+  .sidebar-one p {
+    width: 430px;
+    font-size: 53px;
+    line-height: 121%;
+  }
+  .sidebar-two {
+    flex-basis: 45%;
+  }
+  .sidebar-two {
+    padding-top: 20px;
+  }
+  .sidebar-two p {
+    width: 490px;
+    font-size: 18px;
+    line-height: 140%;
+  }
+}
+/* .............media query of capital............ */
+@media only screen and (max-width: 991px) {
+  .sidebar-one {
+    flex-basis: 45%;
+  }
+  .sidebar-one h3 {
+    width: 100%;
+    font-size: 36px;
+  }
+
+  .sidebar-one p {
+    width: 385px;
+    font-size: 53px;
+    line-height: 121%;
+  }
+  .sidebar-two {
+    flex-basis: 50%;
+  }
+  .sidebar-two {
+    padding-top: 20px;
+  }
+  .sidebar-two p {
+    width: 385px;
+    font-size: 18px;
+    line-height: 140%;
+  }
+}
+
+/* .............media query of capital............ */
+@media only screen and (max-width: 767px) {
+  .sidebar {
+    flex-direction: column;
+  }
+  .sidebar-one h3 {
+    width: 100%;
+    font-size: 25px;
+  }
+  .sidebar-one p {
+    width: 100%;
+    font-size: 30px;
+    line-height: 121%;
+  }
+  .sidebar-two {
+    padding-top: 20px;
+  }
+  .sidebar-two p {
+    width: 100%;
+    font-size: 18px;
+    line-height: 140%;
+  }
+}
+/* .............media query of capital............ */
+@media only screen and (max-width: 575px) {
+  .sidebar {
+    flex-direction: column;
+  }
+  .sidebar-one h3 {
+    width: 535px;
+    font-size: 25px;
+  }
+  .sidebar-one p {
+    width: 100%;
+    font-size: 30px;
+    line-height: 121%;
+  }
+  .sidebar-two {
+    padding-top: 20px;
+  }
+  .sidebar-two p {
+    width: 100%;
+    font-size: 18px;
+    line-height: 140%;
+  }
+}
+
+/* .................media query of asset............ */
+@media only screen and (max-width: 1199px) {
+  .row img {
+    width: 100%;
+    height: 150px;
+  }
+  .row .img-title {
+    right: 35px;
+    bottom: 20px;
+    left: 30px;
+  }
+}
+/* .................media query of asset............ */
+@media only screen and (max-width: 991px) {
+  .row img {
+    width: 350px;
+    height: 150px;
+  }
+  .row .img-title {
+    right: 35px;
+    bottom: 20px;
+    left: 30px;
+  }
+}
+
+/* .................media query of asset............ */
+@media only screen and (max-width: 767px) {
+  .row img {
+    width: 550px;
+    height: 150px;
+  }
+  .row .img-title {
+    right: 35px;
+    bottom: 20px;
+    left: 30px;
+  }
+}
+/* .................media query for asset............ */
+@media only screen and (max-width: 575px) {
+  .row img {
+    width: 550px;
+    height: 150px;
+  }
+  .row .img-title {
+    right: 35px;
+    bottom: 20px;
+    left: 30px;
+  }
+}
+
+/* .............media query of partner............. */
+@media only screen and (max-width: 1199px) {
+  .partner-inner h4 {
+    font-size: 36px;
+  }
+  .partner-inner p {
+    width: 727px;
+    font-size: 53px;
+    line-height: 121%;
+  }
+}
+/* .............media query of partner............. */
+@media only screen and (max-width: 991px) {
+  .partner-inner h4 {
+    font-size: 36px;
+  }
+  .partner-inner p {
+    width: 700px;
+    font-size: 53px;
+    line-height: 121%;
+  }
+}
+/* .............media query of partner............. */
+@media only screen and (max-width: 767px) {
+  .partner-inner h4 {
+    font-size: 36px;
+  }
+  .partner-inner p {
+    width: 680px;
+    font-size: 30px;
+    line-height: 121%;
+  }
+}
+/* .............media query of partner............. */
+@media only screen and (max-width: 575px) {
+  .partner-inner h4 {
+    font-size: 25px;
+  }
+  .partner-inner p {
+    width: 535px;
+    font-size: 30px;
+    line-height: 121%;
+  }
+}
+
+/* .............media query of service............. */
+
+@media only screen and (max-width: 1199px) {
+  .services {
+    padding: 100px 0 50px 0;
+  }
+  .service-left h4 {
+    font-size: 36px;
+    line-height: 49px;
+    letter-spacing: -0.01em;
+  }
+  .service-left h3 {
+    font-size: 53px;
+  }
+  .service-left p {
+    font-size: 18px;
+  }
+  .swiperSliderOne {
+    max-width: 710px;
+    height: 550px;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    top: auto;
+    bottom: 0px;
+    right: 30px;
+    height: 39px;
+    width: 50px;
+  }
+  .swiper-button-prev,
+  .swiper-rtl .swiper-button-next {
+    left: auto;
+    right: 100px;
+    width: 50px;
+    height: 39px;
+  }
+}
+/* .............media query of service............. */
+
+@media only screen and (max-width: 991px) {
+  .services {
+    padding: 100px 0 50px 0;
+  }
+  .service-left h4 {
+    font-size: 36px;
+    line-height: 49px;
+    letter-spacing: -0.01em;
+  }
+  .service-left h3 {
+    font-size: 53px;
+  }
+  .service-left p {
+    font-size: 18px;
+  }
+  .swiperSliderOne {
+    max-width: 710px;
+    height: 550px;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    top: auto;
+    bottom: 0px;
+    right: 30px;
+    height: 39px;
+    width: 50px;
+  }
+  .swiper-button-prev,
+  .swiper-rtl .swiper-button-next {
+    left: auto;
+    right: 100px;
+    width: 50px;
+    height: 39px;
+  }
+}
+/* .............media query of service............. */
+
+@media only screen and (max-width: 767px) {
+  .services {
+    padding: 100px 0 50px 0;
+  }
+
+  .service-inside {
+    flex-direction: column;
+  }
+  .service-left {
+    padding-bottom: 30px;
+    margin-left: 0;
+  }
+  .service-left h4 {
+    font-size: 25px;
+    line-height: 49px;
+    letter-spacing: -0.01em;
+  }
+  .service-left h3 {
+    font-size: 30px;
+  }
+  .service-left p {
+    font-size: 18px;
+  }
+  .swiperSliderOne {
+    max-width: 710px;
+    height: 550px;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    top: auto;
+    bottom: 0px;
+    right: 10px;
+    height: 39px;
+    width: 50px;
+  }
+  .swiper-button-prev,
+  .swiper-rtl .swiper-button-next {
+    left: auto;
+    right: 80px;
+    width: 50px;
+    height: 39px;
+  }
+}
+/* .............media query of service............. */
+@media only screen and (max-width: 575px) {
+  .service-inside {
+    flex-direction: column;
+  }
+  .service-left {
+    padding-bottom: 30px;
+    margin-left: 0;
+  }
+  .service-left h4 {
+    font-size: 25px;
+    line-height: 49px;
+    letter-spacing: -0.01em;
+  }
+  .service-left h3 {
+    font-size: 30px;
+  }
+  .service-left p {
+    font-size: 18px;
+  }
+  .swiperSliderOne {
+    max-width: 810px;
+    height: 550px;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    top: auto;
+    bottom: 0px;
+    right: 120px;
+    height: 39px;
+    width: 50px;
+  }
+  .swiper-button-prev,
+  .swiper-rtl .swiper-button-next {
+    left: auto;
+    right: 180px;
+    width: 50px;
+    height: 39px;
+  }
+}
+/* ...............media query for news.............. */
+@media only screen and (max-width: 1199px) {
+  .news {
+    background-color: #ffffff;
+    padding: 100px 0 50px 0;
+    overflow: hidden;
+  }
+  .news-heading p {
+    font-size: 36px;
+    line-height: 100%;
+    width: 100%;
+  }
+  .news-heading h1 {
+    font-size: 53px;
+    line-height: 120%;
+  }
+}
+/* ...............media query for news.............. */
+@media only screen and (max-width: 991px) {
+  .news {
+    background-color: #ffffff;
+    padding: 100px 0 120px 0;
+    overflow: hidden;
+  }
+  .news-heading p {
+    font-size: 36px;
+    line-height: 100%;
+    width: 727px;
+  }
+  .news-heading h1 {
+    width: 500px;
+    font-size: 53px;
+    line-height: 120%;
+  }
+}
+/* .............media query of news............. */
+@media only screen and (max-width: 767px) {
+  .news {
+    background-color: #ffffff;
+    padding: 100px 0 100px 0;
+    overflow: hidden;
+  }
+  .news-heading p {
+    font-size: 25px;
+    line-height: 100%;
+    width: 727px;
+  }
+  .news-heading h1 {
+    width: 680px;
+    font-size: 30px;
+    line-height: 120%;
+  }
+  .news-heading .button {
+    right: 180px;
+    /* top: 250px; */
+    font-size: 16px;
+  }
+}
+/* ...............media query for news.............. */
+@media only screen and (max-width: 575px) {
+  .news {
+    padding: 0 0 80px 0;
+    overflow: hidden;
+  }
+  .news-heading p {
+    font-size: 25px;
+    line-height: 100%;
+  }
+  .news-heading h1 {
+    width: 560px;
+    font-size: 30px;
+    line-height: 120%;
+  }
+  .news-heading .button {
+    right: 180px;
+    /* top: 120px; */
+    font-size: 16px;
+  }
+}
+
+/* ..........media query CSS FOR NEWS BOTTOM......... */
+@media only screen and (max-width: 1199px) {
+  .row .marine img {
+    width: 100%;
+    height: 300px;
+  }
+  .row .marine .paragraph {
+    margin-top: -180px;
+    font-size: 20px;
+    line-height: 140%;
+    width: 268px;
+  }
+  .row .marine p {
+    width: 268px;
+    margin-top: -80px;
+    color: #fff;
+    top: 250px;
+    left: 35px;
+    font-size: 15px;
+  }
+}
+/* ..........media query CSS FOR NEWS BOTTOM......... */
+@media only screen and (max-width: 991px) {
+  .row .marine img {
+    width: 235px;
+    height: 300px;
+  }
+  .row .marine .paragraph {
+    margin-top: -200px;
+    font-size: 20px;
+    line-height: 140%;
+    width: 220px;
+  }
+  .row .marine p {
+    width: 210px;
+    margin-top: -80px;
+    color: #fff;
+    top: 250px;
+    left: 35px;
+    font-size: 15px;
+  }
+}
+/* ..........media query CSS FOR NEWS BOTTOM......... */
+@media only screen and (max-width: 767px) {
+  .row .marine img {
+    width: 100%;
+    height: 300px;
+  }
+  .row .marine .paragraph {
+    margin-top: -80px;
+    font-size: 20px;
+    line-height: 140%;
+    width: 500px;
+  }
+  .row .marine p {
+    width: 520px;
+    margin-top: -20px;
+    color: #fff;
+    top: 250px;
+    left: 35px;
+    font-size: 15px;
+  }
+}
+/* ..........media query CSS FOR NEWS BOTTOM......... */
+@media only screen and (max-width: 575px) {
+  .row .marine img {
+    width: 100%;
+    height: 300px;
+  }
+  .row .marine .paragraph {
+    margin-top: -80px;
+    font-size: 20px;
+    line-height: 140%;
+    width: 500px;
+  }
+  .row .marine p {
+    width: 520px;
+    margin-top: -20px;
+    color: #fff;
+    top: 250px;
+    left: 35px;
+    font-size: 15px;
+  }
+}
+
+/* ..........media query FOR NEWS footer......... */
+@media only screen and (max-width: 767px) {
+  .footer-bottom {
+    flex-direction: column;
+  }
+}
+/* ..........media query FOR NEWS footer......... */
+@media only screen and (max-width: 575px) {
+  .footer-bottom {
+    flex-direction: column;
+  }
+}
+
+/*---------about page--------- */
+
+/*-------media query for about-inner---------*/
+@media only screen and (max-width: 1199px) {
+  .about-inner {
+    position: absolute;
+    bottom: 15%;
+  }
+  .about-inner h4 {
+    width: 580px;
+    font-size: 36px;
+  }
+  .about-inner p {
+    font-size: 63px;
+    line-height: 109%;
+    letter-spacing: -0.01em;
+    width: 715px;
+    height: 140%;
+  }
+}
+/*--------media query for about section-----------*/
+@media only screen and (max-width: 767px) {
+  .about-inner {
+    position: absolute;
+    bottom: 15%;
+  }
+  .about-inner h4 {
+    width: 580px;
+    font-size: 25px;
+  }
+  .about-inner p {
+    font-size: 50px;
+    line-height: 109%;
+    letter-spacing: -0.01em;
+    width: 715px;
+    height: 140%;
+  }
+}
+/* ..........media query for about......... */
+@media only screen and (max-width: 575px) {
+  .about-inner {
+    position: absolute;
+    bottom: 15%;
+  }
+  .about-inner h4 {
+    width: 535px;
+    font-size: 25px;
+  }
+  .about-inner p {
+    font-size: 40px;
+    line-height: 109%;
+    letter-spacing: -0.01em;
+    width: 535px;
+    height: 140%;
+  }
+}
+/*--------media query for bottom-menu-----------*/
+@media only screen and (max-width: 1199px) {
+  .bottom-menu .manu-bar {
+    margin: 0;
+    font-size: 13px;
+    text-decoration: none;
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+  }
+  .manu-bar .border :first-child {
+    border-right: 1px solid #242d3f;
+    width: 50px;
+  }
+}
+/*--------media query for bottom-menu-----------*/
+@media only screen and (max-width: 991px) {
+  .bottom-menu .manu-bar {
+    margin: 0;
+    font-size: 13px;
+    text-decoration: none;
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+  }
+  .manu-bar .border :first-child {
+    border-right: 1px solid #242d3f;
+    width: 50px;
+  }
+}
+/*--------media query for bottom-menu-----------*/
+@media only screen and (max-width: 767px) {
+  .bottom-menu .manu-bar {
+    margin: 0;
+    font-size: 13px;
+    text-decoration: none;
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+  }
+  .manu-bar .border :first-child {
+    border-right: 1px solid #242d3f;
+    width: 50px;
+  }
+}
+/* ..........media query FOR NEWS footer......... */
+@media only screen and (max-width: 575px) {
+  .bottom-menu .manu-bar {
+    margin: 0;
+    font-size: 13px;
+    text-decoration: none;
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+  }
+  .manu-bar .border :first-child {
+    border-right: 1px solid #242d3f;
+    width: 50px;
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  .naval img {
+    width: 100%;
+    height: 470px;
+    margin-left: -133px;
+  }
+  .naval-pic {
+    padding-left: 130px;
+    margin-right: -110px;
+  }
+  .naval h2 {
+    width: 400px;
+    font-size: 53px;
+    /* height: 80px; */
+    line-height: 120%;
+    letter-spacing: -1px;
+  }
+  .naval p {
+    width: 400px;
+    font-size: 18px;
+    color: #242d3f;
+  }
+  .naval .row .button {
+    font-weight: 700;
+    font-size: 13px;
+    padding: 14px 50px;
+    top: 430px;
+  }
+}
+/* ..........media query for naval......... */
+@media only screen and (max-width: 991px) {
+  .naval img {
+    width: 100%;
+    height: 470px;
+    margin-left: -133px;
+  }
+  .naval-pic {
+    padding-left: 130px;
+    margin-right: -110px;
+  }
+  .naval h2 {
+    width: 400px;
+    font-size: 53px;
+    /* height: 80px; */
+    line-height: 120%;
+    letter-spacing: -1px;
+  }
+  .naval p {
+    width: 400px;
+    font-size: 18px;
+    color: #242d3f;
+  }
+  .naval .row .button {
+    font-weight: 700;
+    font-size: 13px;
+    padding: 14px 50px;
+    top: 430px;
+  }
+}
+/* ..........media query for naval......... */
+@media only screen and (max-width: 767px) {
+  .naval img {
+    width: 100%;
+    height: 470px;
+    margin-left: -133px;
+  }
+  .naval-pic {
+    padding-left: 130px;
+    margin-right: -110px;
+  }
+  .naval h2 {
+    width: 100%;
+    font-size: 30px;
+    height: 80px;
+    line-height: 120%;
+    letter-spacing: -1px;
+  }
+  .naval p {
+    width: 530px;
+    font-size: 18px;
+    color: #242d3f;
+  }
+  .naval .row .button {
+    font-weight: 700;
+    font-size: 13px;
+    padding: 14px 50px;
+    top: 240px;
+  }
+}
+/* ..........media query for naval......... */
+@media only screen and (max-width: 575px) {
+  .naval img {
+    width: 100%;
+    height: 470px;
+    margin-left: -133px;
+  }
+  .naval-pic {
+    padding-left: 130px;
+    margin-right: -110px;
+  }
+  .naval h2 {
+    width: 100%;
+    font-size: 30px;
+    height: 80px;
+    line-height: 120%;
+    letter-spacing: -1px;
+  }
+  .naval p {
+    width: 530px;
+    font-size: 18px;
+    color: #242d3f;
+  }
+  .naval .row .button {
+    font-weight: 700;
+    font-size: 13px;
+    padding: 14px 50px;
+    top: 240px;
+  }
+}
+/* ..........media query for naval-part-2......... */
+@media only screen and (max-width: 1199px) {
+  .inside-one p {
+    font-size: 40px;
+    line-height: 49px;
+    letter-spacing: -0.01em;
+  }
+  .inside-one h2 {
+    font-weight: 700;
+    font-size: 53px;
+    letter-spacing: -0.01em;
+  }
+}
+/* ..........media query for naval-part-2......... */
+@media only screen and (max-width: 991px) {
+  .inside-one p {
+    font-size: 40px;
+    line-height: 49px;
+    letter-spacing: -0.01em;
+  }
+  .inside-one h2 {
+    font-weight: 700;
+    font-size: 53px;
+    letter-spacing: -0.01em;
+  }
+}
+/* ..........media query for naval-part-2......... */
+@media only screen and (max-width: 767px) {
+  .naval-part-inside {
+    flex-direction: column;
+  }
+  .inside-one p {
+    font-size: 30px;
+    line-height: 49px;
+    letter-spacing: -0.01em;
+  }
+  .inside-one h2 {
+    font-weight: 700;
+    font-size: 30px;
+    letter-spacing: -0.01em;
+  }
+}
+/* ..........media query for naval-part-2......... */
+@media only screen and (max-width: 575px) {
+  .naval-part-inside {
+    flex-direction: column;
+  }
+  .inside-one p {
+    font-size: 30px;
+    line-height: 49px;
+    letter-spacing: -0.01em;
+  }
+  .inside-one h2 {
+    font-weight: 700;
+    font-size: 30px;
+    letter-spacing: -0.01em;
+  }
+}
+
+/*-------------media query capabilities------------ */
+/* ..........media query of capabilities-inner........ */
+@media only screen and (max-width: 1199px) {
+  .capabilities-inner h4 {
+    width: 850px;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 36px;
+    letter-spacing: -0.01em;
+  }
+  .capabilities-inner p {
+    width: 850px;
+    font-weight: 700;
+    font-size: 63px;
+    line-height: 65px;
+    letter-spacing: -0.01em;
+    color: #ffffff;
+  }
+}
+/* ..........media query of capabilities-inner........ */
+@media only screen and (max-width: 991px) {
+  .capabilities-inner h4 {
+    width: 850px;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 36px;
+    letter-spacing: -0.01em;
+  }
+  .capabilities-inner p {
+    width: 850px;
+    font-weight: 700;
+    font-size: 63px;
+    line-height: 65px;
+    letter-spacing: -0.01em;
+    color: #ffffff;
+  }
+}
+/* ..........media query of capabilities-inner........ */
+@media only screen and (max-width: 767px) {
+  .capabilities-inner h4 {
+    width: 727px;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: -0.01em;
+  }
+  .capabilities-inner p {
+    width: 727px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 65px;
+    letter-spacing: -0.01em;
+    color: #ffffff;
+  }
+}
+/* ..........media query of capabilities-bottom........ */
+@media only screen and (max-width: 575px) {
+  .capabilities-inner h4 {
+    width: 468px;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: -0.01em;
+  }
+  .capabilities-inner p {
+    width: 535px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 65px;
+    letter-spacing: -0.01em;
+    color: #ffffff;
+  }
+}
+
+/* ..........media query of capabilities-bottom......... */
+@media only screen and (max-width: 1199px) {
+  .capabilities-bottom {
+    padding: 50px 0 0 0;
+    background-color: #242d3f;
+  }
+  .capabilities-one h2 {
+    font-size: 53px;
+    width: 470px;
+  }
+  .capabilities-two p {
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 120%;
+    letter-spacing: -0.01em;
+  }
+}
+/* ..........media query of capabilities-bottom......... */
+@media only screen and (max-width: 991px) {
+  .capabilities-bottom {
+    padding: 50px 0 0 0;
+    background-color: #242d3f;
+  }
+  .capabilities-one h2 {
+    font-size: 53px;
+    width: 370px;
+  }
+  .capabilities-two p {
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 120%;
+    letter-spacing: -0.01em;
+  }
+}
+/* ..........media query of capabilities-bottom......... */
+@media only screen and (max-width: 767px) {
+  .capabilities-bottom {
+    padding: 50px 0 0 0;
+    background-color: #242d3f;
+  }
+  .capabilities-inside {
+    flex-direction: column;
+  }
+  .capabilities-one h2 {
+    font-size: 30px;
+    width: 510px;
+  }
+  .capabilities-two p {
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 120%;
+    letter-spacing: -0.01em;
+  }
+}
+/* ..........media query of capabilities-bottom......... */
+@media only screen and (max-width: 575px) {
+  .capabilities-bottom {
+    padding: 50px 0 0 0;
+    background-color: #242d3f;
+  }
+  .capabilities-inside {
+    flex-direction: column;
+  }
+  .capabilities-one h2 {
+    font-size: 30px;
+    width: 550px;
+  }
+  .capabilities-two p {
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 120%;
+    letter-spacing: -0.01em;
+  }
+}
+
+/*------------media query for technology page-----------*/
+/* ..........media query of header-bottom......... */
+@media only screen and (max-width: 1199px) {
+  .header-para h4 {
+    padding: 0 160px 0 0;
+    margin-left: 260px;
+    width: 560px;
+    margin-bottom: 25px;
+  }
+  .header-para p {
+    padding: 0 0;
+    margin-left: 170px;
+    width: 560px;
+  }
+}
+/* ..........media query of header-bottom......... */
+@media only screen and (max-width: 991px) {
+  .header-para h4 {
+    padding: 0 160px 0 0;
+    margin-left: 190px;
+    width: 560px;
+  }
+  .header-para p {
+    padding: 0 0;
+    margin-left: 110px;
+    width: 560px;
+  }
+}
+/* ..........media query of header-bottom section......... */
+@media only screen and (max-width: 767px) {
+  .header-para h4 {
+    padding: 0 160px 0 0;
+    width: 0px;
+    margin-left: 70px;
+  }
+  .header-para p {
+    padding: 0 40px;
+    width: 560px;
+    margin-left: 40px;
+  }
+}
+/* ..........media query of header-bottom......... */
+@media only screen and (max-width: 575px) {
+  .header-para h4 {
+    padding: 0 160px 0 0;
+    width: 0px;
+  }
+  .header-para p {
+    padding: 0 0;
+    width: 493px;
+  }
+}
+
+/*--------media query for technology-optical------*/
+@media only screen and (max-width: 1199px) {
+  .row .tech-optical img {
+    height: 560px;
+    width: 100%;
+  }
+
+  .row .tech-optical .img-title {
+    position: absolute;
+    bottom: 100px;
+    width: 317px;
+    left: 30px;
+    font-size: 40px;
+  }
+  .technology-optical .row p {
+    position: absolute;
+    bottom: 20px;
+    width: 420px;
+    color: #ffffff;
+    left: 30px;
+    font-size: 15px;
+  }
+}
+/*--------media query for technology-optical------*/
+@media only screen and (max-width: 991px) {
+  .row .tech-optical img {
+    height: 560px;
+    width: 353px;
+  }
+
+  .row .tech-optical .img-title {
+    position: absolute;
+    bottom: 100px;
+    width: 317px;
+    left: 30px;
+    font-size: 35px;
+  }
+  .technology-optical .row p {
+    position: absolute;
+    bottom: 10px;
+    width: 300px;
+    color: #ffffff;
+    left: 30px;
+    font-size: 15px;
+  }
+}
+/*--------media query for technology-optical------*/
+@media only screen and (max-width: 767px) {
+  .row .tech-optical img {
+    height: 560px;
+    width: 100%;
+  }
+  .technology-optical .row h3 {
+    width: 100%;
+    font-size: 25px;
+  }
+  .technology-optical .tech-optical p {
+    width: 500px;
+    margin-bottom: 40px;
+  }
+}
+/*--------media query for technology-optical------*/
+@media only screen and (max-width: 575px) {
+  .row .tech-optical img {
+    height: 560px;
+    width: 100%;
+  }
+  .technology-optical .row .tech-optical .img-title {
+    width: 100%;
+    font-size: 25px;
+  }
+  .technology-optical .tech-optical p {
+    width: 500px;
+  }
+}
+
+/* ..........media query of services section......... */
+@media only screen and (max-width: 1199px) {
+  .service-para h4 {
+    padding: 0 270px 0 0;
+    width: 560px;
+    margin-left: 340px;
+    margin-bottom: 30px;
+  }
+  .service-para p {
+    padding: 0 0;
+    width: 493px;
+    margin-left: 250px;
+  }
+}
+/* ..........media query of services section......... */
+@media only screen and (max-width: 991px) {
+  .service-para h4 {
+    padding: 0 270px 0 0;
+    width: 560px;
+    margin-left: 240px;
+    margin-bottom: 30px;
+  }
+  .service-para p {
+    padding: 0 0;
+    width: 493px;
+    margin-left: 160px;
+  }
+}
+
+/* ..........media query of services section......... */
+@media only screen and (max-width: 767px) {
+  .service-para h4 {
+    padding: 0 270px 0 0;
+    width: 560px;
+    margin-left: 30px;
+  }
+  .service-para p {
+    padding: 0 0;
+    width: 493px;
+    margin-left: 70px;
+  }
+}
+
+/* ..........media query of services section......... */
+@media only screen and (max-width: 575px) {
+  .service-para h4 {
+    padding: 0 270px 0 0;
+    width: 0px;
+  }
+  .service-para p {
+    padding: 0 0;
+    width: 493px;
+  }
+}
+
+/*----------media query for service-top---------*/
+@media only screen and (max-width: 991px) {
+  .services-bottom .service-pic .top {
+    top: 240px;
+    width: 228px;
+    font-size: 25px;
+  }
+  .services-bottom .service-pic p {
+    width: 180px;
+  }
+}
+/*----------media query for service-top---------*/
+@media only screen and (max-width: 767px) {
+  .services-bottom .service-pic img {
+    height: 505px;
+    width: 100%;
+  }
+  .services-bottom .service-pic .speak {
+    width: 450px;
+    color: #242d3f;
+  }
+  .services-bottom .service-pic .top {
+    top: 370px;
+    width: 550px;
+    height: 200px;
+  }
+  .services-bottom .service-pic p {
+    width: 500px;
+  }
+}
+/*----------media query for service-top---------*/
+@media only screen and (max-width: 575px) {
+  .services-bottom .service-pic .top {
+    top: 370px;
+    width: 450px;
+  }
+  .services-bottom .service-pic p {
+    width: 500px;
+  }
+}
+
+/*-------contact page-------*/
+/*----------media query for contact page---------*/
+@media only screen and (max-width: 1199px) {
+  .contact-area h4 {
+    margin-left: 350px;
+  }
+}
+/*----------media query for contact page---------*/
+@media only screen and (max-width: 991px) {
+  .contact-area h4 {
+    margin-left: 200px;
+  }
+}
+/*----------media query for contact page---------*/
+@media only screen and (max-width: 767px) {
+  .contact-area h4 {
+    margin-left: 125px;
+  }
+}
+/*----------media query for contact page---------*/
+@media only screen and (max-width: 575px) {
+  .contact-area h4 {
+    margin-left: 125px;
+  }
+}
+
+/* ...........media query for contact-bottom........ */
+@media only screen and (max-width: 1199px) {
+  .text-area-inside {
+    flex-direction: column;
+  }
+  .contact-left {
+    padding: 60px 330px;
+  }
+}
+
+/* ...........media query for contact-bottom........ */
+@media only screen and (max-width: 991px) {
+  .text-area-inside {
+    flex-direction: column;
+  }
+  .contact-left {
+    padding: 60px 225px;
+  }
+}
+
+/* ...........media query for contact-bottom........ */
+@media only screen and (max-width: 767px) {
+  .text-area-inside {
+    flex-direction: column;
+  }
+  .contact-left {
+    padding: 60px 100px;
+  }
+}
+
+/* ...........media query for contact-bottom........ */
+@media only screen and (max-width: 575px) {
+  .text-area-inside {
+    flex-direction: column;
+  }
+}
+
+/* ...........media query for watch-header.......... */
+@media only screen and (max-width: 1199px) {
+  .marine h3 {
+    color: #fff;
+    top: 325px;
+    width: 268px;
+    font-size: 18px;
+  }
+  .watch-header .row .marine p {
+    color: #fff;
+    top: 385px;
+    width: 268px;
+    font-size: 14px;
+  }
+  .watch-btn {
+    margin-top: 30px;
+    margin-left: 11px;
+  }
+  .watch-header .row .button {
+    margin-left: -250px;
+  }
+}
+/* ...........media query for watch-header.......... */
+@media only screen and (max-width: 991px) {
+  .marine h3 {
+    color: #fff;
+    top: 254px;
+    width: 177px;
+    font-size: 20px;
+  }
+  .watch-header .row .marine p {
+    color: #fff;
+    top: 345px;
+    width: 182px;
+    font-size: 14px;
+  }
+  .watch-btn {
+    margin-top: 30px;
+    margin-left: 11px;
+  }
+  .watch-header .row .button {
+    margin-left: -220px;
+  }
+}
+/* ...........media query for watch-header.......... */
+@media only screen and (max-width: 767px) {
+  .marine h3 {
+    font-size: 18px;
+    width: 470px;
+    top: 340px;
+  }
+  .watch-header .row .marine p {
+    color: #fff;
+    top: 303px;
+    width: 485px;
+    font-size: 14px;
+  }
+  .watch-btn {
+    margin-top: 30px;
+    margin-left: 11px;
+  }
+  .watch-header .row .button {
+    padding: 10px 36px;
+    margin-left: 155px;
+    color: #242d3f;
+    border: 1px solid #242d3f;
+    font-size: 15px;
+    border-radius: 25px;
+    text-decoration-line: none;
+  }
+}
+/* ...........media query for watch-header.......... */
+@media only screen and (max-width: 575px) {
+  .marine h3 {
+    font-size: 18px;
+    width: 470px;
+    top: 340px;
+  }
+  .watch-header .row .marine p {
+    color: #fff;
+    top: 303px;
+    width: 485px;
+    font-size: 14px;
+  }
+  .watch-btn {
+    margin-top: 30px;
+    margin-left: 11px;
+  }
+  .watch-header .row .button {
+    padding: 10px 36px;
+    margin-left: 155px;
+    color: #242d3f;
+    border: 1px solid #242d3f;
+    font-size: 15px;
+    border-radius: 25px;
+    text-decoration-line: none;
+  }
+}
+/* ..........media query of technology-sub-page......... */
+@media only screen and (max-width: 1199px) {
+  .technology-area-one h2 {
+    font-size: 30px;
+    line-height: 50px;
+  }
+  .technology-area-one p {
+    font-size: 18px;
+    line-height: 120%;
+    width: 100%;
+    padding-bottom: 20px;
+  }
+  .technology-area-two img {
+    width: 100%;
+    height: 521px;
+  }
+}
+/* ..........media query of technology-sub-page......... */
+@media only screen and (max-width: 991px) {
+  .technology-area-one h2 {
+    font-size: 30px;
+    line-height: 50px;
+  }
+  .technology-area-one p {
+    font-size: 18px;
+    line-height: 120%;
+    width: 100%;
+    padding-bottom: 20px;
+  }
+  .technology-area-two img {
+    width: 100%;
+    height: 521px;
+  }
+}
+/* ..........media query of technology-sub-page......... */
+@media only screen and (max-width: 767px) {
+  .technology-sub-page {
+    padding: 180px 0 30px 0;
+  }
+  .technology-main-area {
+    flex-direction: column;
+  }
+  .technology-area-one h2 {
+    font-size: 30px;
+    line-height: 50px;
+  }
+  .technology-area-one p {
+    font-size: 18px;
+    line-height: 120%;
+    width: 100%;
+    padding-bottom: 20px;
+  }
+  .technology-area-two img {
+    width: 100%;
+    height: 521px;
+  }
+}
+/* ..........media query of technology-sub-page......... */
+@media only screen and (max-width: 575px) {
+  .technology-sub-page {
+    padding: 180px 0 30px 0;
+  }
+  .technology-main-area {
+    flex-direction: column;
+  }
+  .technology-area-one h2 {
+    font-size: 30px;
+    line-height: 50px;
+  }
+  .technology-area-one p {
+    font-size: 18px;
+    line-height: 120%;
+    width: 100%;
+    padding-bottom: 20px;
+  }
+  .technology-area-two img {
+    width: 100%;
+    height: 521px;
+  }
+}
+
+/* ............media query for technology-sub-pages-top.......... */
+@media only screen and (max-width: 1199px) {
+  .technology-sub-page-top {
+    padding: 50px 0 450px 0;
+  }
+  .technology-sub-page-top h2 {
+    font-size: 30px;
+    line-height: 50px;
+  }
+  .technology-sub-page-top p {
+    width: 100%;
+    font-size: 18px;
+  }
+}
+/* ............media query for technology-sub-pages-top.......... */
+@media only screen and (max-width: 991px) {
+  .technology-sub-page-top {
+    padding: 50px 0 450px 0;
+  }
+  .technology-sub-page-top h2 {
+    font-size: 30px;
+    line-height: 50px;
+  }
+  .technology-sub-page-top p {
+    width: 100%;
+    font-size: 18px;
+  }
+}
+/* ............media query for technology-sub-pages-top.......... */
+@media only screen and (max-width: 767px) {
+  .technology-sub-page-top {
+    padding: 50px 0 450px 0;
+  }
+  .technology-sub-page-top h2 {
+    font-size: 30px;
+    line-height: 50px;
+  }
+  .technology-sub-page-top p {
+    width: 100%;
+    font-size: 18px;
+  }
+}
+/* ............media query for technology-sub-pages-top.......... */
+@media only screen and (max-width: 575px) {
+  .technology-sub-page-top {
+    padding: 50px 0 450px 0;
+  }
+  .technology-sub-page-top h2 {
+    font-size: 30px;
+    line-height: 50px;
+  }
+  .technology-sub-page-top p {
+    width: 100%;
+    font-size: 18px;
+  }
+}
+
+/* ...........css for technology-sub-page-bottom............ */
+@media only screen and (max-width: 1199px) {
+  .tech-sub-pic img {
+    height: 470px;
+    margin-top: 80px;
+  }
+  .row .shado::before {
+    height: 80%;
+  }
+  .tech-sub-pic h4 {
+    width: 100%;
+    font-size: 30px;
+    top: 330px;
+  }
+  .tech-sub-pic p {
+    width: 300px;
+    font-size: 18px;
+  }
+  .row .tech-sub-pic .text-top {
+    position: absolute;
+    top: 370px;
+  }
+}
+/* ...........css for technology-sub-page-bottom............ */
+@media only screen and (max-width: 991px) {
+  .tech-sub-pic img {
+    height: 470px;
+    margin-top: 80px;
+  }
+  .row .shado::before {
+    height: 80%;
+  }
+  .tech-sub-pic h4 {
+    width: 100%;
+    font-size: 30px;
+    top: 330px;
+  }
+  .tech-sub-pic p {
+    width: 300px;
+    font-size: 18px;
+  }
+  .row .tech-sub-pic .text-top {
+    position: absolute;
+    top: 370px;
+  }
+}
+/* ...........css for technology-sub-page-bottom............ */
+@media only screen and (max-width: 767px) {
+  .tech-sub-pic img {
+    height: 470px;
+    margin-top: 80px;
+  }
+  .row .shado::before {
+    height: 80%;
+  }
+  .tech-sub-pic h4 {
+    width: 100%;
+    font-size: 30px;
+    top: 330px;
+  }
+  .tech-sub-pic p {
+    width: 100%;
+    font-size: 18px;
+  }
+  .row .tech-sub-pic .text-top {
+    position: absolute;
+    top: 370px;
+  }
+}
+/* ...........css for technology-sub-page-bottom............ */
+@media only screen and (max-width: 575px) {
+  .tech-sub-pic img {
+    height: 470px;
+    margin-top: 80px;
+  }
+  .row .shado::before {
+    height: 80%;
+  }
+  .tech-sub-pic h4 {
+    width: 100%;
+    font-size: 30px;
+    top: 330px;
+  }
+  .tech-sub-pic p {
+    width: 100%;
+    font-size: 18px;
+  }
+  .row .tech-sub-pic .text-top {
+    position: absolute;
+    top: 370px;
+  }
+}
+
+/* .............media query for services-sub-pages.......... */
+@media only screen and (max-width: 1199px) {
+  .services-area-one h2 {
+    font-size: 30px;
+    line-height: 50px;
+  }
+  .services-area-one p {
+    font-size: 18px;
+    line-height: 120%;
+    padding-bottom: 20px;
+    width: 100%;
+  }
+  .services-area-two img {
+    width: 100%;
+    height: 521px;
+  }
+}
+/* .............media query for services-sub-pages.......... */
+@media only screen and (max-width: 991px) {
+  .services-area-one h2 {
+    font-size: 30px;
+    line-height: 50px;
+  }
+  .services-area-one p {
+    font-size: 18px;
+    line-height: 120%;
+    padding-bottom: 20px;
+    width: 100%;
+  }
+  .services-area-two img {
+    width: 100%;
+    height: 521px;
+  }
+}
+/* .............media query for services-sub-pages.......... */
+@media only screen and (max-width: 767px) {
+  .services-main-area {
+    flex-direction: column;
+  }
+  .services-area-one h2 {
+    font-size: 30px;
+    line-height: 50px;
+  }
+  .services-area-one p {
+    font-size: 18px;
+    line-height: 120%;
+    padding-bottom: 20px;
+    width: 100%;
+  }
+  .services-area-two img {
+    width: 100%;
+    height: 521px;
+  }
+}
+/* .............media query for services-sub-pages.......... */
+@media only screen and (max-width: 575px) {
+  .services-main-area {
+    flex-direction: column;
+  }
+  .services-area-one h2 {
+    font-size: 30px;
+    line-height: 50px;
+  }
+  .services-area-one p {
+    font-size: 18px;
+    line-height: 120%;
+    padding-bottom: 20px;
+    width: 100%;
+  }
+  .services-area-two img {
+    width: 100%;
+    height: 521px;
+  }
+}
+
+/* ...........media query for survice-page-top.......... */
+@media only screen and (max-width: 1199px) {
+  .contact-box {
+    color: #ffffff;
+    width: 260px;
+    margin-left: 285px;
+  }
+}
+/* ...........media query for survice-page-top.......... */
+@media only screen and (max-width: 991px) {
+  .contact-box {
+    color: #ffffff;
+    width: 260px;
+    margin-left: 115px;
+  }
+}
+/* ...........media query for survice-page-top.......... */
+@media only screen and (max-width: 767px) {
+  .contact-box {
+    color: #ffffff;
+    width: 260px;
+    margin-left: 50px;
+  }
+}
+/* ...........media query for survice-page-top.......... */
+@media only screen and (max-width: 575px) {
+  .contact-box {
+    color: #ffffff;
+    width: 260px;
+    margin-left: 50px;
+  }
+}
